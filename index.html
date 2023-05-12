@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Registration Management System</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+<div id="wrapper">
+    <div class="content"></div>
+    <header>
+        <h1>User Registration Management System</h1>
+    </header>
+ 
+
+  <form id="userForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" required><br>
+
+    <label for="idNumber">ID Number:</label>
+    <input type="text" id="idNumber" required><br>
+
+    <label for="country">Country:</label>
+    <select id="country" required>
+      <option value="">Select Country</option>
+      <option value="kenya">kenya</option>
+      <option value="Canada">uganda</option>
+      <option value="UK">ethiopia</option>
+    </select><br>
+
+    <label for="languages">Languages Spoken:</label>
+    <input type="text" id="languages" required><br>
+    <button type="submit">Add User</button>
+    <button type="button" id="read">read/hide</button>
+    
+  </form>
+ 
+  <table id="userTable">
+    <tr>
+      <th>Name</th>
+      <th>ID Number</th>
+      <th>Country</th>
+      <th>Languages Spoken</th>
+    </tr>
+    <tr>
+        <td>kelvin</td>
+        <td>7820823</td>
+        <td>kenya</td>
+        <td>english</td>
+
+    </tr>
+  </table>
+
+</div>
+</div>
+<script src="index.js"></script>
+</body>
+</html>

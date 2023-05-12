@@ -1,0 +1,117 @@
+
+    /* Add some basic styling */
+    body {
+        background-blend-mode: blueviolet;
+        font-family: Arial, sans-serif;
+        background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+        background-repeat: no-repeat;
+        background-size:cover;
+     
+
+
+    }
+    #labelBtn{
+        background-color: black;
+        color: #ddd;
+
+    }
+    #checkBtn:checked user{
+        display: none;
+
+    }
+    .hide{
+        display: none;
+    }
+
+    #checkBtn{
+        color: black;
+    
+    }
+    #wrapper {
+        background-color: #eee;
+        width: 90%;
+        max-width: 960px;
+        margin: 20px auto;
+        border-radius: 6px;
+        box-shadow: 1px 10px 10px rgba(0,0,0,0.7);
+        box-sizing: border-box;
+        padding: 0 0 20px;
+        overflow: hidden;
+        border: 1px solid palevioletred;
+        
+    }
+    .content{
+        background-size: 100%;
+        align-items: center;
+        padding: 10px 0;
+    }
+    header{
+        background-color: blue;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    form{
+        text-align: center;
+        display: inline-grid;
+        align-items: center;
+    }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      th, td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+    @media screen and (max-width: 992px) {
+        body {
+          background-color: blue;
+        }
+        header{
+            background-color:blue ;
+
+        }
+        header h1{
+            display: block;
+            text-align: center;
+        }
+    
+      }
+
+      
+      /* On screens that are 600px or less, set the background color to olive */
+      @media screen and (max-width: 600px) {
+        body {
+          background-color: olive;
+        }
+        header{
+            background-color:olive ;
+
+        }
+        header h1{
+            display: block;
+            text-align: center;
+        }
+        .btn buttton{
+            display: grid;
+            margin-top: 5px;
+            
+        }
+        .crud{
+            margin-top: 5px;
+            cursor: pointer;
+        }
+        .crud:hover{
+            background-color: black;
+            color: white;
+        
+        }
+        form{
+            display: block;
+            align-items: center;
+            text-align: center;
+        }
+      }
+   
+  
