@@ -10,6 +10,9 @@
     <div class="content"></div>
     <header>
         <h1>User Registration Management System</h1>
+        <form action="">
+          <input type="search" placeholder="Search user" id="searchUser">
+        </form>
     </header>
  
 
@@ -18,21 +21,22 @@
     <input type="text" id="name" required><br>
 
     <label for="idNumber">ID Number:</label>
-    <input type="text" id="idNumber" required><br>
-
+    <input type="text"  pattern="[0-9]{8}" id="idNumber" required><br>
     <label for="country">Country:</label>
     <select id="country" required>
       <option value="">Select Country</option>
       <option value="kenya">kenya</option>
-      <option value="Canada">uganda</option>
-      <option value="UK">ethiopia</option>
+      <option value="uganda">uganda</option>
+      <option value="ethiopia">ethiopia</option>
+      <option value="madagascar">madagascar</option>
     </select><br>
 
     <label for="languages">Languages Spoken:</label>
     <input type="text" id="languages" required><br>
+    <div>
     <button type="submit">Add User</button>
     <button type="button" id="read">read/hide</button>
-    
+    </div>
   </form>
  
   <table id="userTable">
@@ -41,12 +45,14 @@
       <th>ID Number</th>
       <th>Country</th>
       <th>Languages Spoken</th>
+      <th>delete</th>
     </tr>
     <tr>
         <td>kelvin</td>
         <td>7820823</td>
         <td>kenya</td>
         <td>english</td>
+        <td><button id="delete">Delete</button></td>
 
     </tr>
   </table>

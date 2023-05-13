@@ -1,5 +1,16 @@
 
-    /* Add some basic styling */
+    #nameError {
+        display: none;
+        font-size: 0.8em;
+      }
+      
+      #nameError.visible {
+        display: block;
+      }
+      
+      input.invalid {
+        border-color: red;
+      }
     body {
         background-blend-mode: blueviolet;
         font-family: Arial, sans-serif;
@@ -30,8 +41,8 @@
     #wrapper {
         background-color: #eee;
         width: 90%;
-        max-width: 960px;
-        margin: 20px auto;
+        max-width: 90rem;
+        margin: 1px auto;
         border-radius: 6px;
         box-shadow: 1px 10px 10px rgba(0,0,0,0.7);
         box-sizing: border-box;
@@ -50,9 +61,11 @@
         display: flex;
         justify-content: space-evenly;
     }
-    form{
+    form {
+        margin: 3px;
         text-align: center;
-        display: inline-grid;
+        display: flex;
+        flex-direction: row;
         align-items: center;
     }
     table {
@@ -64,7 +77,7 @@
         text-align: left;
         border-bottom: 1px solid #ddd;
       }
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 1000px) {
         body {
           background-color: blue;
         }
@@ -75,6 +88,14 @@
         header h1{
             display: block;
             text-align: center;
+        }
+        form{
+            display: grid;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            height: auto;
+
         }
     
       }
@@ -108,10 +129,14 @@
         
         }
         form{
-            display: block;
+            display: grid;
             align-items: center;
             text-align: center;
+            width: 100%;
+            height: auto;
+
         }
+    
       }
    
   
